@@ -94,6 +94,23 @@ header h3 {
 }
 
 
+/* MEDIA QUERIES */ 
+
+@media (min-width: 1130px) {
+   .cards {
+     display: flex;
+     flex-grow: 1;
+     width: 80%;
+     margin: 0 auto;
+     align-items: center;
+   }
+   .inner-wrapper {
+     display: flex;
+     flex-direction: column;
+     width: 100%
+   }
+}
+
 
 
 
