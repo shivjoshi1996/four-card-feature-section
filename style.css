@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    font-size: 100%;
   }
 
   h1, h2 {
@@ -14,7 +15,7 @@
 
 .wrapper {
   background-color: #fafafa;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   
@@ -25,12 +26,14 @@
 header {
   text-align: center;
   font-weight: 200;
+  margin: 0 auto;
 }
 
 header h1 {
-  padding: 5% 0 5% 0;
+  padding: 50px 0 20px 0;
   font-weight: 200;
   text-align: center;
+  font-size: 2rem;
 }
 header span {
   font-weight: 600;
@@ -39,6 +42,7 @@ header span {
 header h3 {
   font-weight: 400;
   padding: 0px 30px 0px 30px;
+  font-size: 1.3rem;
 }
 
 /* Cards Section */
@@ -50,15 +54,16 @@ header h3 {
 .card {
   background-color: #ffffff;
   height: 30vh;
+  min-height: 250px;
   width: 80%;
   margin: 0 auto;
   border-radius: 5px;
   border-top: 5px solid hsl(180, 62%, 55%);
   padding: 25px 0px 10px 30px;
   margin-bottom: 35px;
-  -webkit-box-shadow: 0px 8px 25px 5px rgba(184,184,184,1);
-  -moz-box-shadow: 0px 8px 25px 5px rgba(184,184,184,1);
-  box-shadow: 0px 8px 25px 5px rgba(184,184,184,1);
+  -webkit-box-shadow: 0px 14px 53px -8px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 14px 53px -8px rgba(204,204,204,1);
+  box-shadow: 0px 14px 53px -8px rgba(204,204,204,1);
   position: relative;
 }
 
@@ -81,8 +86,7 @@ header h3 {
 
 .card p {
   padding-right: 20px;
-  padding-top: 10px;
-  font-size: 18px;
+  padding-top: 20px;
   color: hsl(229, 6%, 66%);
 }
 
@@ -93,6 +97,10 @@ header h3 {
   right: 30px;
 }
 
+footer {
+  padding-top: 50px;
+  text-align: center;
+}
 
 /* MEDIA QUERIES */ 
 
@@ -108,6 +116,12 @@ header h3 {
      display: flex;
      flex-direction: column;
      width: 100%
+   }
+   header h1 {
+    font-size: 3rem;
+   }
+   header {
+     width:50%;
    }
 }
 
